@@ -31,15 +31,16 @@ cd Top_FCNC_Lightning
 ```
 * **Install Conda:** If you do not have Miniconda or Anaconda installed, download and install it from [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/individual) respectively.
   
-* **Set Up Your Environment:**   This project relies on several dependencies listed in `environment.yml`, including libraries such as NumPy, Pandas, Matplotlib, tqdm, h5py, scikit-learn, PyTorch, PyTorch Geometric, PyTorch Lightning, and Torchmetrics. To install all dependencies at once and create a Conda environment named `higgscp`, run the following command in your terminal:
+* **Set Up Your Environment:**   This project relies on several dependencies listed in `environment.yml`, including libraries such as NumPy, Pandas, Matplotlib, tqdm, h5py, scikit-learn, PyTorch, PyTorch Geometric, PyTorch Lightning, and Torchmetrics. To install all dependencies at once and create a Conda environment named `Top_FCNC`, run the following command in your terminal:
 
 ```bash
 conda env create -f environment.yml
 ```
 
 * **Activate the Environment:**
-  ```bash
-conda activate higgscp
+
+```bash
+conda activate Top_FCNC
 ```
 
 
