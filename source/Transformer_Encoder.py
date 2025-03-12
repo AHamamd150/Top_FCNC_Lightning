@@ -138,13 +138,13 @@ class TransformerLayer(nn.Module):
         self.dropout1 = nn.Dropout(0.1)
         self.dropout2 = nn.Dropout(0.1)
         self.attention = MultiHead_Self_Attention(self.input_dim,self.h_dim, self.n_heads,self.masked)
-        self.norm1 = nn.RMSNorm(self.input_dim)
-        self.norm2 = nn.RMSNorm(self.input_dim)
+        self.norm1 = nn.LayerNorm(self.input_dim)
+        self.norm2 = nn.LayerNorm(self.input_dim)
         self.feed_forward = nn.Sequential(
-                          nn.RMSNorm(self.input_dim),
+                          nn.LayerNorm(self.input_dim),
                           nn.Linear(self.input_dim, self.expansion_factor*self.input_dim),
-                          nn.SiLU(),
-                          nn.RMSNorm(self.expansion_factor*self.input_dim), 
+                          nn.GELU(),
+                          nn.LayerNorm(self.expansion_factor*self.input_dim), 
                           nn.Linear(self.expansion_factor*self.input_dim, self.input_dim))
     def forward(self,query):
 
