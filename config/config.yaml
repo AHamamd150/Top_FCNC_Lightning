@@ -1,0 +1,60 @@
+seed_everything: 42
+trainer:
+  max_epochs: 100
+  accelerator: "gpu"
+  devices: 2
+  
+
+
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:
+        save_weights_only: false
+        mode: "min"
+        monitor: "val_loss"
+        every_n_train_steps: 0
+        every_n_epochs: 1
+        save_top_k: 1
+        filename: "best_checkpoint"
+        verbose: True
+        train_time_interval: null
+
+
+    - class_path: lightning.pytorch.callbacks.EarlyStopping
+      init_args:
+        monitor: "val_loss"
+        min_delta: 0.0
+        patience: 5
+        verbose: False
+
+
+    - class_path: lightning.pytorch.callbacks.TQDMProgressBar
+      init_args:
+        refresh_rate: 1
+        leave: True
+
+
+  logger:
+    - class_path: lightning.pytorch.loggers.TensorBoardLogger
+      init_args:
+        save_dir: "."
+        name: "Top_checkpoints"
+
+model:
+  class_path: source.Transformer.TransformerModel
+  init_args:
+    input_dim: 10
+    embed_dim: [512,256,128]
+    h_dim: 128
+    num_layers: 10
+    expansion_factor: 4
+    n_heads: 8
+    masked: True
+    lr : 0.0015
+
+data:
+  class_path: source.data_handeling_Transformer.CustomDataModule
+  init_args:
+    dir_: "/data1/hammad/tqgamma/data_transformer/data/"
+    n_event: 200_000    
+    batch_size: 1028
