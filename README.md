@@ -50,6 +50,6 @@ conda activate Top_FCNC
 <a name="start"></a>
 ##  Get started
 To traint the transformer network.
-```python
+```bash
 python main.py fit --config config/config_Transformer.yaml
 ```
