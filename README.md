@@ -1,5 +1,5 @@
 # Top_FCNC_Lightning 
-## Authors: Benjamin Fuks,a Sumit K. Garg,b A. Hammadc and Adil Jueid
+## Authors:  Benjamin Fuks,  Sumit K. Garg, A. Hammad and Adil Jueid
 &emsp; DL codes used for the Top quark FCNC analysis based on [arXiv:xxx](https://arxiv.org/abs/2207.09959). 
  __________
  ## $~~~~~~~~~~~$  Table of content
