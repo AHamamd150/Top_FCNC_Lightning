@@ -11,3 +11,23 @@ $~~~~~~~~~~~$ $~~~~~~~~~~~$  [2. Requirements ](#Requirements)
 $~~~~~~~~~~~$ $~~~~~~~~~~~$  [3. Package structure ](#structure)
 
 $~~~~~~~~~~~$ $~~~~~~~~~~~$  [4. Get started ](#start)
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ <a name="Introduction"></a>
+## Introduction
+&emsp;  This code implements attention based Transformer and GCN network to analyze the signatures of the Top quark FCNC at the LHC. Inputs to the Transformer is a particle cloud structure while for the GCN a fully connected graph. ...............
+
+
+<a name="Requirements"></a>
+## Requirements
+&emsp; To run the package you need python3 with the following modules:
+* Numpy
+* TensorFlow
+* sklearn
+* imblearn 
+* multiprocessing (for the intial training over multi-cores)
+* tqdm (for the illustration of the fancy progress bar)
+
+Requirements can be easily installed by `pip3 install module`
