@@ -56,5 +56,5 @@ python main.py fit --config config/config_Transformer.yaml
 For testing the network one need to retore the weigths and the configuration file from the best epoch results as 
 
 ```bash
-python main.py test -c checkpoints/version_0/config_Transformer.yaml --ckpt_path checkpoints/version_0/checkpoints/best_checkpoint.ckpt
+python main.py test -c checkpoints/version_0/config.yaml --ckpt_path checkpoints/version_0/checkpoints/best_checkpoint.ckpt
 ```
