@@ -49,10 +49,15 @@ conda activate Top_FCNC
 
 <a name="start"></a>
 ##  Get started
-To traint the transformer network.
+To traint the Transformer network.
 ```bash
 python main.py fit --config config/config_Transformer.yaml
 ```
+To traint the Graph Attention network.
+```bash
+python main.py fit --config config/config_GAT.yaml
+```
+
 For testing the network one need to retore the weigths and the configuration file from the best epoch results as 
 
 ```bash
