@@ -1,3 +1,4 @@
 from .Transformer import *
 from .Transformer_Encoder import *
-from .data_handeling_Transformer import * 
+from .GCN_network import *
+from .Graph_networks import *
