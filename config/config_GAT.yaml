@@ -50,7 +50,7 @@ model:
     lr : 0.0005
 
 data:
-  class_path: data_handling.data_handeling_GCN.CustomDataModule
+  class_path: data_handling.data_handling_GCN.CustomDataModule
   init_args:
     dir_: "/data1/hammad/tqgamma/data_transformer/data/"
     n_event: 1200_000    
