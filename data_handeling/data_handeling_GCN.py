@@ -83,10 +83,10 @@ class CustomDataModule(LightningDataModule):
         #sig = pd.read_csv(self.dir_+'/ttbarToGammaCharm/Variables-Transformers.csv',delimiter=',',header=None)
         
         w1 = 7.025e-7
-        w5 = 1.12e-3
+        w2 = 1.12e-3
         w3 = 5.17e-5
         w4 = 4.677e-5
-        w2 = 7.1e-6
+        w5 = 7.1e-6
         l_sig = round(self.n_event/2)
 
         w = w1+w2+w3+w4+w5
