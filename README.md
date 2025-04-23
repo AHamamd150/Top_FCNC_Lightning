@@ -47,7 +47,12 @@ conda activate Top_FCNC
 
 <a name="structure"></a>
 ##  Code structure
-
+&emsp; The package consists of the following:
+* `main.py` main file to run the DL networks
+* `data_handling/` directory contains the data preprocessing for the GAT and Transformer networks
+  * `data_handling_GCN.py` file to create the graph like structure with train and test data loaders
+  * `data_handling_Transformer.py` file to create the grid like structure suitable for Transformer network with train and test data loaders
+ 
 
 <a name="start"></a>
 ##  Get started
