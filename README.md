@@ -19,7 +19,7 @@ $~~~~~~~~~~~$ $~~~~~~~~~~~$  [4. Get started ](#start)
 ## Introduction
 &emsp;  This code implements attention based Transformer and GCN network to analyze the signatures of the Top quark FCNC at the LHC. Inputs to the Transformer is a particle cloud structure while for the GCN a fully connected graph. ...............
 
-
+[View the report](/home/hammad/Downloads/GAT_network.pdf)
 <a name="Requirements"></a>
 ##  Prerequisites
 &emsp; To run the package you need python3 with the following modules:
