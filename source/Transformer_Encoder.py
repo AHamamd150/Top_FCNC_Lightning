@@ -20,8 +20,7 @@ class MultiHead_Self_Attention(nn.Module):
                  masked=True):
         super(MultiHead_Self_Attention, self).__init__()
         '''
-        MultiHead self attention with interaction matrix U. 
-        The diemsnion of U is (batch,num of heads, particle tokens, particle tokens)
+        MultiHead self attention.
         
         Args:
             embed_dim0: int, dim of the feature tokens
@@ -69,7 +68,6 @@ class MultiHead_Self_Attention(nn.Module):
     def scaled_dot_product_attention(self, Q, K, V):
         """
         Computes scaled dot-product attention.
-        dim of U: batch_size x num_heads x particle_tokens x particle_tokens
         """
         d_k = Q.size(-1)
 
