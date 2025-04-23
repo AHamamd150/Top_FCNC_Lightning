@@ -4,13 +4,13 @@
  __________
  ##  Table of content
 
-$~~~~~~~~~~~$ $~~~~~~~~~~~$ [1. Introduction ](#Introduction)
+$~~~~~~~~~~~$ [1. Introduction ](#Introduction)
 
-$~~~~~~~~~~~$ $~~~~~~~~~~~$  [2. Prerequisites ](#Prerequisites)
+$~~~~~~~~~~~$  [2. Prerequisites ](#Prerequisites)
 
-$~~~~~~~~~~~$ $~~~~~~~~~~~$  [3. Code structure ](#structure)
+$~~~~~~~~~~~$  [3. Code structure ](#structure)
 
-$~~~~~~~~~~~$ $~~~~~~~~~~~$  [4. Get started ](#start)
+$~~~~~~~~~~~$  [4. Get started ](#start)
 
 
 
