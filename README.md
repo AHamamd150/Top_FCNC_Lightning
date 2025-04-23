@@ -19,12 +19,7 @@ $~~~~~~~~~~~$ $~~~~~~~~~~~$  [4. Get started ](#start)
 ## Introduction
 &emsp;  This code implements attention based Transformer and GCN network to analyze the signatures of the Top quark FCNC at the LHC. Inputs to the Transformer is a particle cloud structure while for the GCN a fully connected graph. ...............
 
-<span>
-  <img width="635" style="display:inline-block; vertical-align:top;" src="https://github.com/user-attachments/assets/0e5b442a-2ea2-4a88-83de-638b0a4bc5b5" />
-</span>
-<span>
-  <img width="505" style="display:inline-block; vertical-align:top;" src="https://github.com/user-attachments/assets/756135fb-0147-44be-8c9a-76d6220a4675" />
-</span>
+<img width="925" alt="Screenshot 2025-04-23 at 1 21 38 PM" src="https://github.com/user-attachments/assets/931495e4-e9a3-462d-8299-9d23661beead" />
 
 
 <a name="Requirements"></a>
