@@ -52,7 +52,15 @@ conda activate Top_FCNC
 * `data_handling/` directory contains the data preprocessing for the GAT and Transformer networks
   * `data_handling_GCN.py` file to create the graph like structure with train and test data loaders
   * `data_handling_Transformer.py` file to create the grid like structure suitable for Transformer network with train and test data loaders
- 
+* `source/` directory contains the source files
+  * `Graph_networks.py` file contains implementation of different Graph networks, GCN, Edge convolution, GAT and ResGCN
+  * `GCN_network.py` file contains the GAT Lightning model, including the train, validation and test steps
+  * `Transformer_Encoder.py` file contains implementation of self-attention Transformer encoder
+  * `Transformer.py` file contains the Transformer Lightning model with train, validation and test steps are defined
+* `config/` directory contains the configuration files in which the user can fully controls the network structure and the training hyperparameters
+  * `config_GAT.yaml` configuration file for GAT training
+  * `config_Transformer.yaml` configuration file for Transformer training
+* `data/` directory contains the input datasets, signal and background events in csv files.     
 
 <a name="start"></a>
 ##  Get started
